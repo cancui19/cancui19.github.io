@@ -3,13 +3,15 @@ layout: aboutnew
 title: About me
 permalink: /
 subtitle: >
-  PhD Student, Graduate Research Assistant<br>
+  A Ph.D. Student<br>
+  Graduate Research Assistant<br>
   College of Engineering, Purdue University<br>
-  Email: yunsheng [at] purdue [dot] edu
-#  Office: 127, POTR, PWL
+  Email: cancui [at] purdue [dot] edu <br>
+  Office: 500 Central Dr. – POTR 127, West Lafayette, IN 47907 <br>
+  
 profile:
   align:
-  image: prof_pic_sq.jpg
+  image: pf_headshot.png
   image_circular: false # crops the image to make it circular
   address: >
 
@@ -18,13 +20,11 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-
+\\
 I am currently a first-year PhD student at [Purdue University](https://www.purdue.edu/),
-[Digital Twin Lab](https://purduedigitaltwin.github.io/), where I serve as a graduate research
-assistant under the guidance of [Prof. Ziran Wang](https://ziranw.github.io/). Prior to joining Purdue,
-I earned my Master's degree in [Computer Science](https://cs.nyu.edu/home/index.html)
-from [New York University](https://www.nyu.edu/). My research interests include applied AI/ML, autonomous vehicles, and
-digital twins.
+[Digital Twin Lab](https://purduedigitaltwin.github.io/), advised by Dr. [Ziran Wang](https://ziranw.github.io/). Before joining Purdue Engineering,
+I received my Master's degree in [Electrical and Computer Engineering](https://ece.engin.umich.edu/)
+from [University of Michigan](https://umich.edu/), and I completed my Bachelor’s degree in Automotive Engineering at Wuhan University of Technology. My research interests include applied AI/ML, perception, motion planning, Large Language Models, motion controls, and digital twins.
 
 
 <!---

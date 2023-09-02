@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Yunsheng
+title: Can Cui # the website title (if blank, full name will be used instead)
+first_name: Can
 middle_name:
-last_name: Ma
-email: yunsheng@purdue.edu
+last_name: Cui
+email: cancui@purdue.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -16,9 +16,9 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: horse.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: karby.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://maysonma.github.io/ # the base hostname & protocol for your site
+url: https://cancui19.github.io/ # the base hostname & protocol for your site
 baseurl: '' # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -71,22 +71,22 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: maysonma # your GitHub user name
+github_username: cancui19 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: yunsheng-ma # your LinkedIn user name
+linkedin_username: can-cui-2573b7230/ # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: notEEFMAAAAJ # your Google Scholar ID
+scholar_userid: 9rqTLMcAAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: 0000-0003-3933-2574 # your ORCID ID
+orcid_id:  # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
-publons_id: HDO-6786-2022 # your ID on Publons
+publons_id:  # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
-research_gate_profile: Yunsheng-Ma-3 # your profile on ResearchGate
+research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
 work_url: # work page URL
@@ -112,7 +112,7 @@ contact_note: >
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: G-EZGH5PJVSL # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics:  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
@@ -122,7 +122,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # blog_name will be displayed in your blog page
+blog_name:  # blog_name will be displayed in your blog page
 blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
@@ -271,8 +271,8 @@ display_tags: [ 'formatting', 'images', 'links', 'math', 'code' ] # this tags wi
 
 scholar:
 
-  last_name: Ma
-  first_name: Yunsheng
+  last_name: Cui
+  first_name: Can
 
   style: apa
   locale: en
