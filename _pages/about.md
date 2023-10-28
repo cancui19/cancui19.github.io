@@ -3,7 +3,7 @@ layout: aboutnew
 title: About me
 permalink: /
 subtitle: >
-  A Ph.D. Student<br>
+  Ph.D. Student<br>
   Graduate Research Assistant<br>
   College of Engineering, Purdue University<br>
   Email: cancui [at] purdue [dot] edu <br>
@@ -16,7 +16,7 @@ profile:
   address: >
 
 news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---

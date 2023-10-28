@@ -1,13 +1,14 @@
 ---
 layout: page
-title: submenus
-nav: false
+title: Intersts
+nav: true
 nav_order: 6
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
-    - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: Cats
+      permalink: /cats/
+    - title: Soccers
+      permalink: /soccers/
+    - title: Music
+      permalink: /music/
 ---
