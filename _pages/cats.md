@@ -35,13 +35,13 @@ To help you decode the enigmatic world of my cats, here's a little cheat sheet w
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/cats/IMG_3441.jpg"  class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cats/IMG_3441.JPG"  class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/cats/IMG_3850.JPG"  class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/cats/IMG_3882.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cats/IMG_3882.JPG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
