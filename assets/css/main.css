@@ -316,8 +316,6 @@ blockquote {
 
 .social {
   text-align: left;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
 }
 .social .contact-icons {
   font-size: 2rem;
@@ -328,6 +326,10 @@ blockquote {
 }
 .social .contact-icons a:hover i::before {
   color: var(--global-theme-color);
+}
+.social {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 .social .contact-note {
   font-size: 0.8rem;
