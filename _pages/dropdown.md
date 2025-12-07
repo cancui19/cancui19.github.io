@@ -9,6 +9,6 @@ children:
       permalink: /cats/
     - title: Soccers
       permalink: /soccers/
-    - title: Music
-      permalink: /music/
+    # - title: Music
+    #   permalink: /music/
 ---

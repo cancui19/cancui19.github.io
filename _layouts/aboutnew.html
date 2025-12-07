@@ -8,7 +8,7 @@ layout: default
             <div class="col-sm-3">
                 {% if page.profile.image %}
                 <img style="width: 170px;border-radius: 170px"
-                     src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+                    src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
                 {% endif %}
             </div>
 
@@ -38,8 +38,16 @@ layout: default
         {%- endif %}
 
         {% if page.selected_papers -%}
-        <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
-        * indicates equal contributions.
+        <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications <a
+                    href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ&hl=en" target="_blank"
+                    rel="noopener"><img
+                        src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cancui19/acad-homepage/google-scholar-stats/gs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"
+                        alt="Google Scholar Citations Badge"> </a></a>
+        </h2>
+        * indicates equal contributions.<br>
+        Please check my <a href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ&hl=en" target="_blank"
+            rel="noopener">Google Scholar</a> for the complete list of publications.
+        {%- include selected_papers.html %}
         {%- include selected_papers.html %}
         {%- endif %}
 

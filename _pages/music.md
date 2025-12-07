@@ -20,4 +20,4 @@ I began my exploration of learning Western classical bel canto singing at the ag
 <div class="caption">
      
 </div>
-Besides that, I have a deep passion for hip-hop music, particularly Chinese hip-hop. China boasts a wealth of incredibly talented rappers, and I highly recommend getting to know their work.
+Besides that, I have a deep passion for hip-hop music, particularly Chinese hip-hop.
