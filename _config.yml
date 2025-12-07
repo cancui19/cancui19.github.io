@@ -6,6 +6,7 @@ title: Can Cui # the website title (if blank, full name will be used instead)
 first_name: Can
 middle_name:
 last_name: Cui
+native_name: 崔璨
 email: cancui19@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -16,7 +17,7 @@ footer_text: >
 keywords: can cui; purdue  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: karby.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: cartoon_can.JPG  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://cancui19.github.io/ # the base hostname & protocol for your site
 baseurl: '' # the subpath of your site, e.g. /blog/
@@ -179,7 +180,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit:  # leave blank to include all the news in the `_news` folder
+  limit: 5  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true

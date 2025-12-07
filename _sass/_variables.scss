@@ -20,7 +20,7 @@ $green-color-bright: #11D68B !default;
 $purple-color: #B509AC !default;
 $light-purple-color: lighten($purple-color, 25%);
 $pink-color: #e85f9c !default;
-$pink-color-light: #ffdddd !default;
+$pink-color-light: lighten($pink-color, 25%) !default;
 $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
@@ -32,8 +32,9 @@ $white-color: #ffffff !default;
 $black-color: #000000 !default;
 $blue-color-light: #84c9f1 !default;
 
-$purdue-yellow-color-dark: #67bee9 !default;
-$purdue-yellow-color-light: #e154cc !default;
+$purdue-yellow-color-dark: #C47D8E !default;
+$purdue-yellow-color-light: #344C9C !default;
+
 
 // Theme colors
 

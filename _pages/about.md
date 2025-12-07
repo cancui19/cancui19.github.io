@@ -4,15 +4,15 @@ title: About me
 permalink: /
 subtitle: >
   Research Scientist in VLA<br>
-  Bosch Center for Artificial Intelligence (BCAI)<br>
-  Ph.D. Purdue University<br>
+  <a><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;">Bosch Center for Artificial Intelligence (BCAI)<br>
+  <a><img src="/assets/img/logo/purdue_icon.png" alt="Purdue Logo" style="height:20px;vertical-align:middle;"></a>Ph.D. Purdue University<br>
   Email: cancui19 [at] gmail [dot] com <br>
   Office: 384 Santa Trinita Ave, Sunnyvale, CA 94085 <br>
-  
+
 profile:
   align: right
   image: pf_headshot.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: >
 
 news: true  # includes a list of news items
@@ -47,3 +47,5 @@ use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/)
 and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn,
 Google Scholar, or just disable all of them.
 --->
+
+

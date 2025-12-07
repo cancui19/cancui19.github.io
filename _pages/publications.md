@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
-years: [ 2024,2023 ]
+years: [ 2025,2024,2023 ]
 nav: false
 importance: 2
 ---
@@ -16,4 +16,4 @@ importance: 2
 {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
 
-</div>
+</div>·
