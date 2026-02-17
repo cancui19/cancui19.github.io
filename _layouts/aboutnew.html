@@ -16,7 +16,9 @@ layout: default
                 {% assign native_name = page.native_name | default: site.native_name %}
                 <h1 class="post-title">
                     {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{
-                    site.middle_name }} {{ site.last_name }}{% else %}<span class="font-weight-bold">{{ site.title }}</span>{% endif %}{% if native_name %} <span class="native-name">({{ native_name }})</span>{% endif %}
+                    site.middle_name }} {{ site.last_name }}{% else %}<span class="font-weight-bold">{{ site.title
+                        }}</span>{% endif %}{% if native_name %} <span class="native-name">({{ native_name }})</span>{%
+                    endif %}
                 </h1>
                 <p class="desc">{{ page.subtitle }}</p>
                 <div class="social">
@@ -32,7 +34,7 @@ layout: default
             {{ content }}
         </div>
 
-        <p class="tenure-note">I am actively seeking a tenure-track faculty position in autonomous systems and transportation AI, with a focus on foundation models, human-autonomy teaming, embodied AI and real-world deployment for intelligent mobility.</p>
+        <!-- <p class="tenure-note">I am actively seeking a tenure-track faculty position in autonomous systems and transportation AI, with a focus on foundation models, human-autonomy teaming, embodied AI and real-world deployment for intelligent mobility.</p> -->
         {% if page.news and site.announcements.enabled -%}
         <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
         {%- include news.html limit=true %}
