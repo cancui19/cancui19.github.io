@@ -2,10 +2,18 @@
  * Content
  ******************************************************************************/
 
+// Typography stacks. Serif for headings, Inter for everything else.
+$font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-display: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: $font-body;
+  font-feature-settings: "cv05", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   h1,
   h2,
@@ -14,6 +22,9 @@ body {
   h5,
   h6 {
     scroll-margin-top: 66px;
+    font-family: $font-display;
+    font-weight: 600;
+    letter-spacing: -0.015em;
   }
 }
 

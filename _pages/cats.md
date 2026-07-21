@@ -45,7 +45,7 @@ To help you decode the enigmatic world of my cats, here's a little cheat sheet w
         {% include figure.html path="assets/img/cats/3.jpg"  class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/cats/demian2.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cats/demian2.JPG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

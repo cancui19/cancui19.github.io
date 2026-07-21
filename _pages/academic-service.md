@@ -35,7 +35,7 @@ description: Professional activities and community service.
 <div class="service-section">
 <h3>As an Organizer</h3>
 <ul class="service-list">
-<li>Chair, 5rd Workshop on Large Language and Vision Models for Autonomous Driving at the <a href="https://wacv.thecvf.com/" target="_blank" rel="noopener">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)</a></li>
+<li>Chair, 5th Workshop on Large Language and Vision Models for Autonomous Driving at the <a href="https://wacv.thecvf.com/" target="_blank" rel="noopener">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)</a></li>
   <li>Chair, 2nd Workshop on Distillation of Foundation Models for Autonomous Driving (WDFM-AD) at the <a href="https://iccv.thecvf.com/" target="_blank" rel="noopener">IEEE/CVF International Conference on Computer Vision (ICCV 2025)</a></li>
   <li>Chair, 1st Workshop on Distillation of Foundation Models for Autonomous Driving (WDFM-AD) at the <a href="https://cvpr.thecvf.com/" target="_blank" rel="noopener">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)</a></li>
   <li>Chair, Workshop on AI for Children at the <a href="https://iclr.cc/" target="_blank" rel="noopener">International Conference on Learning Representations (ICLR)</a></li>

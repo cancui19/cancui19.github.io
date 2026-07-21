@@ -16,4 +16,4 @@ importance: 2
 {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
 
-</div>·
+</div>

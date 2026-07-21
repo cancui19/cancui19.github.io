@@ -19,6 +19,19 @@
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
 
+  <!-- Drop a shadow under the navbar once the page is scrolled -->
+  <script>
+    (function () {
+      var nav = document.getElementById("navbar");
+      if (!nav) return;
+      var update = function () {
+        nav.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+  </script>
+
   <!-- Load Common JS -->
   <script src="{{ '/assets/js/no_defer.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/js/common.js' | relative_url }}"></script>

@@ -5,7 +5,8 @@
 <div class="row">
     <div class="col-sm-3 abbr">
         {% if entry.teaser %}
-        <img src="../assets/teaser/{{entry.teaser}}" class="teaser img-fluid z-depth-1">
+        <img src="{{ entry.teaser | prepend: '/assets/teaser/' | relative_url }}" class="teaser img-fluid z-depth-1"
+            alt="{{ entry.title | escape }}" loading="lazy">
         {% endif %}
         {% if entry.abbr %}
         {% if site.data.venues[entry.abbr] %}

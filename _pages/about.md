@@ -2,12 +2,15 @@
 layout: aboutnew
 title: About me
 permalink: /
+eyebrow: Research Scientist · Vision-Language-Action Models
+tagline: >
+  Vision, language, and action models for autonomous systems that people can understand and trust.
 subtitle: >
-  Research Scientist in VLA<br>
-  <a><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;">Bosch Center for Artificial Intelligence (BCAI)<br>
-  <a><img src="/assets/img/logo/purdue_icon.png" alt="Purdue Logo" style="height:20px;vertical-align:middle;"></a>Ph.D. Purdue University<br>
-  Email: cancui19 [at] gmail [dot] com <br>
-  Office: 384 Santa Trinita Ave, Sunnyvale, CA 94085 <br>
+  <ul class="profile-meta">
+    <li><img class="inline-logo" src="/assets/img/logo/bosch_logo.png" alt="Bosch">Bosch Center for Artificial Intelligence (BCAI)</li>
+    <li><img class="inline-logo" src="/assets/img/logo/purdue_icon.png" alt="Purdue">Ph.D., Purdue University</li>
+    <li><i class="fas fa-map-marker-alt meta-icon"></i>Sunnyvale, CA</li>
+  </ul>
 
 profile:
   align: right
@@ -20,8 +23,16 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-\\
-I am a Research Scientist in Vision-Language Action (VLA) Models at the <a href="https://www.bosch-ai.com/" target="_blank"><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;"> Bosch Center for Artificial Intelligence (BCAI)</a>, developing foundation models for personalized, interpretable, and safe autonomous driving. My prior industry experience includes serving as an AI Research Intern at <a href="https://amrd.toyota.com/division/itl/" target="_blank"><img src="assets/img/logo/Toyota-Logo-1978.png" alt="Toyota Logo" style="height:25px;vertical-align:middle;">Toyota InfoTech Labs</a> and as a Controls Research Intern at <a href="https://www.cummins.com/" target="_blank"><img src="assets/img/logo/Cummins-logo.png" alt="Cummins Logo" style="height:20px;vertical-align:middle;">Cummins Inc\.</a>, developing control algorithms and digital twin validation for physical systems. I earned my Ph.D. from <a href="https://www.purdue.edu/" target="_blank"><img src="/assets/img/logo/purdue_icon.png" alt="Purdue Logo" style="height:20px;vertical-align:middle;"> Purdue University</a>, advised by Dr. [Ziran Wang](https://ziranw.github.io/), where my research focused on human–autonomy teaming, multimodal perception, and digital twin–based validation for autonomous vehicles. My work spans LLMs/VLMs, VLA, human-autonomy teaming, generative motion planning, control, and data-driven autonomy.
+I am a Research Scientist in Vision-Language Action (VLA) Models at the <a href="https://www.bosch-ai.com/" target="_blank"><img class="inline-logo" src="/assets/img/logo/bosch_logo.png" alt="Bosch">Bosch Center for Artificial Intelligence (BCAI)</a>, developing foundation models for personalized, interpretable, and safe autonomous driving. My prior industry experience includes serving as an AI Research Intern at <a href="https://amrd.toyota.com/division/itl/" target="_blank"><img class="inline-logo" src="/assets/img/logo/Toyota-Logo-1978.png" alt="Toyota">Toyota InfoTech Labs</a> and as a Controls Research Intern at <a href="https://www.cummins.com/" target="_blank"><img class="inline-logo" src="/assets/img/logo/Cummins-logo.png" alt="Cummins">Cummins Inc\.</a>, developing control algorithms and digital twin validation for physical systems. I earned my Ph.D. from <a href="https://www.purdue.edu/" target="_blank"><img class="inline-logo" src="/assets/img/logo/purdue_icon.png" alt="Purdue">Purdue University</a>, advised by Dr. [Ziran Wang](https://ziranw.github.io/), where my research focused on human–autonomy teaming, multimodal perception, and digital twin–based validation for autonomous vehicles. My work spans LLMs/VLMs, VLA, human-autonomy teaming, generative motion planning, control, and data-driven autonomy.
+
+<div class="research-tags">
+  <span>Vision-Language-Action</span>
+  <span>LLMs / VLMs</span>
+  <span>Autonomous Driving</span>
+  <span>Human-Autonomy Teaming</span>
+  <span>Motion Planning</span>
+  <span>Digital Twin</span>
+</div>
 
 
 <!-- <img src="assets/img/logo/Toyota-Logo-1978.png" alt="Toyota Logo" style="height:25px;vertical-align:middle;">Toyota North America
