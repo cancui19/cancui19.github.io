@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Intersts | Can Cui</title>
+    <title>Interests | Can Cui</title>
     <meta name="author" content="Can  Cui">
     <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
@@ -31,6 +31,8 @@
 <!--      href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css"-->
 <!--      integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">-->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -82,13 +84,16 @@
 
           <!-- Other pages -->
           <li class="nav-item ">
+            <a class="nav-link" href="/publications/">Publications</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="/service/">Academic Service</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="/teaching/">Teaching</a>
           </li>
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Intersts<span class="sr-only">(current)</span></a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interests<span class="sr-only">(current)</span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/cats/">Cats</a>
               <a class="dropdown-item" href="/soccers/">Soccers</a>
@@ -116,7 +121,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Intersts</h1>
+            <h1 class="post-title">Interests</h1>
             <p class="post-description"></p>
           </header>
 
@@ -143,7 +148,7 @@
     </div>
     <div class="container">
         © Copyright 2026 Can  Cui.
-        Last updated: February 17, 2026.
+        Last updated: July 21, 2026.
     </div>
 
 </footer>
@@ -168,6 +173,19 @@
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Drop a shadow under the navbar once the page is scrolled -->
+  <script>
+    (function () {
+      var nav = document.getElementById("navbar");
+      if (!nav) return;
+      var update = function () {
+        nav.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+  </script>
 
   <!-- Load Common JS -->
   <script src="/assets/js/no_defer.js"></script>

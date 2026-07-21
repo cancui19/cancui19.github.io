@@ -31,6 +31,8 @@
 <!--      href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css"-->
 <!--      integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">-->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -82,13 +84,16 @@
 
           <!-- Other pages -->
           <li class="nav-item ">
+            <a class="nav-link" href="/publications/">Publications</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="/service/">Academic Service</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="/teaching/">Teaching</a>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Intersts</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interests</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/cats/">Cats</a>
               <a class="dropdown-item" href="/soccers/">Soccers</a>
@@ -112,38 +117,87 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <div class="post">
+        <div class="post about-page">
     <article>
-        <div class="row">
-            <div class="col-sm-3">
-                
-                <img style="width: 170px;border-radius: 170px" src="/assets/img/pf_headshot.png">
-                
-            </div>
+        <header class="hero">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Research Scientist · Vision-Language-Action Models</p>
 
-            <div class="col-sm-9">
                 
-                <h1 class="post-title">
-                    <span class="font-weight-bold">Can Cui</span> <span class="native-name">(崔璨)</span>
+                <h1 class="hero-name">
+                    Can Cui <span class="native-name">崔璨</span>
                 </h1>
-                <p class="desc">Research Scientist in VLA<br> <a><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;">Bosch Center for Artificial Intelligence (BCAI)<br> </a><a><img src="/assets/img/logo/purdue_icon.png" alt="Purdue Logo" style="height:20px;vertical-align:middle;"></a>Ph.D. Purdue University<br> Email: cancui19 [at] gmail [dot] com <br> Office: 384 Santa Trinita Ave, Sunnyvale, CA 94085 <br>
-</p>
-                <div class="social">
-                    <div class="contact-icons">
-                        <a href="mailto:%63%61%6E%63%75%69%31%39@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
-<a href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ&amp;hl=en" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-<a href="https://github.com/cancui19" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-<a href="https://www.linkedin.com/in/can-cui-2573b7230/" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
 
-                    </div>
+                <p class="hero-tagline">Vision, language, and action models for autonomous systems that people can understand and trust.
+</p>
+
+                <div class="hero-meta">
+<ul class="profile-meta">
+  <li>
+<img class="inline-logo" src="/assets/img/logo/bosch_logo.png" alt="Bosch">Bosch Center for Artificial Intelligence (BCAI)</li>
+  <li>
+<img class="inline-logo" src="/assets/img/logo/purdue_icon.png" alt="Purdue">Ph.D., Purdue University</li>
+  <li>
+<i class="fas fa-map-marker-alt meta-icon"></i>Sunnyvale, CA</li>
+</ul>
+</div>
+
+                <div class="hero-actions">
+                    <a class="hero-btn hero-btn--primary" href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i>Google Scholar</a>
+                    <a class="hero-btn" href="mailto:%63%61%6E%63%75%69%31%39@%67%6D%61%69%6C.%63%6F%6D"><i class="fas fa-envelope"></i>Email</a>
+                    <a class="hero-btn" href="https://github.com/cancui19" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+                    <a class="hero-btn" href="https://www.linkedin.com/in/can-cui-2573b7230/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
                 </div>
 
+                <!-- Populated from assets/gs_data.json; stays hidden if unavailable. -->
+                <a class="scholar-chip" id="scholar-line" hidden href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ" target="_blank" rel="noopener">
+                    <span class="scholar-mark" aria-hidden="true">
+                        <svg viewbox="0 0 24 24" width="13" height="13">
+                            <path fill="#4285F4" d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5s-5.548 1.749-6.758 4.269z"></path>
+                            <circle cx="12" cy="17" r="7" fill="#A0C3FF"></circle>
+                        </svg>
+                    </span>
+                    <span><b data-stat="citedby"></b> citations</span>
+                    <span class="sep">·</span>
+                    <span>h-index <b data-stat="hindex"></b></span>
+                </a>
+                <script>
+                    (function () {
+                        fetch("/assets/gs_data.json")
+                            .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+                            .then(function (d) {
+                                if (!d || !d.citedby || !d.hindex) return;
+                                var line = document.getElementById("scholar-line");
+                                line.querySelector('[data-stat="citedby"]').textContent = d.citedby.toLocaleString();
+                                line.querySelector('[data-stat="hindex"]').textContent = d.hindex;
+                                if (d.updated) {
+                                    line.title = "Google Scholar — updated " + d.updated;
+                                }
+                                line.hidden = false;
+                            })
+                            .catch(function () { /* leave the line hidden rather than showing an error */ });
+                    })();
+                </script>
             </div>
-        </div>
 
-        <div class="clearfix">
-            <p><br>
-I am a Research Scientist in Vision-Language Action (VLA) Models at the <a href="https://www.bosch-ai.com/" target="_blank" rel="external nofollow noopener"><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;"> Bosch Center for Artificial Intelligence (BCAI)</a>, developing foundation models for personalized, interpretable, and safe autonomous driving. My prior industry experience includes serving as an AI Research Intern at <a href="https://amrd.toyota.com/division/itl/" target="_blank" rel="external nofollow noopener"><img src="assets/img/logo/Toyota-Logo-1978.png" alt="Toyota Logo" style="height:25px;vertical-align:middle;">Toyota InfoTech Labs</a> and as a Controls Research Intern at <a href="https://www.cummins.com/" target="_blank" rel="external nofollow noopener"><img src="assets/img/logo/Cummins-logo.png" alt="Cummins Logo" style="height:20px;vertical-align:middle;">Cummins Inc.</a>, developing control algorithms and digital twin validation for physical systems. I earned my Ph.D. from <a href="https://www.purdue.edu/" target="_blank" rel="external nofollow noopener"><img src="/assets/img/logo/purdue_icon.png" alt="Purdue Logo" style="height:20px;vertical-align:middle;"> Purdue University</a>, advised by Dr. <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>, where my research focused on human–autonomy teaming, multimodal perception, and digital twin–based validation for autonomous vehicles. My work spans LLMs/VLMs, VLA, human-autonomy teaming, generative motion planning, control, and data-driven autonomy.</p>
+            
+            <div class="hero-portrait">
+                <img src="/assets/img/pf_headshot.png" alt="Can Cui">
+            </div>
+            
+        </header>
+
+        <div class="about-bio">
+            <p>I am a Research Scientist in Vision-Language Action (VLA) Models at the <a href="https://www.bosch-ai.com/" target="_blank" rel="external nofollow noopener"><img class="inline-logo" src="/assets/img/logo/bosch_logo.png" alt="Bosch">Bosch Center for Artificial Intelligence (BCAI)</a>, developing foundation models for personalized, interpretable, and safe autonomous driving. My prior industry experience includes serving as an AI Research Intern at <a href="https://amrd.toyota.com/division/itl/" target="_blank" rel="external nofollow noopener"><img class="inline-logo" src="/assets/img/logo/Toyota-Logo-1978.png" alt="Toyota">Toyota InfoTech Labs</a> and as a Controls Research Intern at <a href="https://www.cummins.com/" target="_blank" rel="external nofollow noopener"><img class="inline-logo" src="/assets/img/logo/Cummins-logo.png" alt="Cummins">Cummins Inc.</a>, developing control algorithms and digital twin validation for physical systems. I earned my Ph.D. from <a href="https://www.purdue.edu/" target="_blank" rel="external nofollow noopener"><img class="inline-logo" src="/assets/img/logo/purdue_icon.png" alt="Purdue">Purdue University</a>, advised by Dr. <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>, where my research focused on human–autonomy teaming, multimodal perception, and digital twin–based validation for autonomous vehicles. My work spans LLMs/VLMs, VLA, human-autonomy teaming, generative motion planning, control, and data-driven autonomy.</p>
+
+<div class="research-tags">
+  <span>Vision-Language-Action</span>
+  <span>LLMs / VLMs</span>
+  <span>Autonomous Driving</span>
+  <span>Human-Autonomy Teaming</span>
+  <span>Motion Planning</span>
+  <span>Digital Twin</span>
+</div>
 
 <!-- <img src="assets/img/logo/Toyota-Logo-1978.png" alt="Toyota Logo" style="height:25px;vertical-align:middle;">Toyota North America
 
@@ -171,15 +225,15 @@ Google Scholar, or just disable all of them.
 
         </div>
 
-        <!-- <p class="tenure-note">I am actively seeking a tenure-track faculty position in autonomous systems and transportation AI, with a focus on foundation models, human-autonomy teaming, embodied AI and real-world deployment for intelligent mobility.</p> -->
-        <h2><a href="/news/" style="color: inherit;">News</a></h2>          <div class="news">
+        <section class="home-section home-section--tinted">
+            <h2 class="section-heading"><a href="/news/">News</a></h2>          <div class="news">
             <div class="table-responsive" style="max-height: 60vw">
               <table class="table table-sm table-borderless">
               
                 <tr>
                   <th scope="row">Jan 5, 2026</th>
                   <td>
-                    I start working for <a href="https://www.bosch-ai.com/" target="_blank" rel="external nofollow noopener"><img src="/assets/img/logo/bosch_logo.png" alt="Bosch Logo" style="height:25px;vertical-align:middle;"> Bosch Center for Artificial Intelligence (BCAI)</a> as a Research Scientist in Vision-Language Action (VLA) Models!🎉
+                    I start working for <a href="https://www.bosch-ai.com/" target="_blank" rel="external nofollow noopener"><img class="inline-logo" src="/assets/img/logo/bosch_logo.png" alt="Bosch"> Bosch Center for Artificial Intelligence (BCAI)</a> as a Research Scientist in Vision-Language Action (VLA) Models!🎉
 
                   </td>
                 </tr>
@@ -200,7 +254,7 @@ Google Scholar, or just disable all of them.
                 <tr>
                   <th scope="row">Sep 10, 2025</th>
                   <td>
-                    One paper is accepted in 2025 <a href="https://2025.emnlp.org/" rel="external nofollow noopener" target="_blank">ENMLP</a>!&lt;/a&gt;! 🎉
+                    One paper is accepted at <a href="https://2025.emnlp.org/" rel="external nofollow noopener" target="_blank">EMNLP 2025</a> Industry Track! 🎉
 
                   </td>
                 </tr>
@@ -214,337 +268,182 @@ Google Scholar, or just disable all of them.
               </table>
             </div>
           </div>
+        </section>
 
-        <h2>
-<a href="/publications/" style="color: inherit">Selected Publications </a><a href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ&amp;hl=en" target="_blank" rel="noopener"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cancui19/acad-homepage/google-scholar-stats/gs_data_shieldsio.json&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" alt="Google Scholar Citations Badge"> </a>
-        </h2>
-        * indicates equal contributions.<br>
-        Please check my <a href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> for the complete list of publications.
-          <div class="publications">
-            <ol class="bibliography">
+        <section class="home-section">
+            <h2 class="section-heading">
+                <a href="/publications/">Selected Publications</a>
+            </h2>
+            <p class="section-note">
+                * indicates equal contribution. See my
+                <a href="https://scholar.google.com/citations?user=9rqTLMcAAAAJ" target="_blank" rel="noopener">Google Scholar</a> for the complete list of publications.
+            </p>
+<div class="paper-carousel-wrap">
+  <button class="carousel-nav carousel-nav--prev" type="button" aria-label="Scroll to previous papers" hidden>
+    <i class="fas fa-chevron-left"></i>
+  </button>
+
+  <div class="paper-carousel">
+    <div class="paper-track">
+      <ol class="bibliography">
 <li>
-<!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
-    <div class="col-sm-3 abbr">
+<a class="paper-card" href="https://arxiv.org/abs/2410.15281" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <img src="../assets/teaser/cover_PIEEE.png" class="teaser img-fluid z-depth-1">
+        <img src="/assets/teaser/cover_pieee.png" alt="LLM4AD: Large Language Models for Autonomous Driving – Concept, Review, Benchmark, Experiments, and Future Trends" decoding="async">
         
-        
-        
-        <abbr class="badge">P-IEEE</abbr>
-        
-        
+        <span class="paper-card-venue">P-IEEE</span>
     </div>
-
-    <div id="cui_ieee_2025" class="col-sm-9">
-        
-        <!-- Title -->
-        <div class="title">LLM4AD: Large Language Models for Autonomous Driving – Concept, Review, Benchmark, Experiments, and Future Trends</div>
-        <!-- Author -->
-        <div class="author">
-        </div>
-        <div class="periodical">
-            
-            <em>In Proceedings of the IEEE</em>
-            
-            
-            (<b>P-IEEE</b>)
-            
-            
-            , 2025
-            
-            </div>
-        
-
-        <!-- Links/Buttons -->
-        <div class="links">
-            
-            
-            
-            <a href="http://arxiv.org/abs/2410.15281" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="external nofollow noopener">arXiv</a>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </div>
-
-        <!-- Hidden abstract block -->
-        
-
-        <!-- Hidden bibtex block -->
-        
-    </div>
-</div>
+    <div class="paper-card-title">LLM4AD: Large Language Models for Autonomous Driving – Concept, Review, Benchmark, Experiments, and Future Trends</div>
+<div class="paper-card-meta">2025</div>
+</a>
 </li>
 <li>
-<!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
-    <div class="col-sm-3 abbr">
+<a class="paper-card" href="https://aclanthology.org/2025.emnlp-industry.57/" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <img src="../assets/teaser/cover_dasr.png" class="teaser img-fluid z-depth-1">
+        <img src="/assets/teaser/cover_dasr.png" alt="DASR: Distributed Adaptive Scene Recognition-A Multi-Agent Cloud-Edge Framework for Language-Guided Scene Detection" decoding="async">
         
-        
-        
-        <abbr class="badge">EMNLP</abbr>
-        
-        
+        <span class="paper-card-venue">EMNLP</span>
     </div>
-
-    <div id="cui_dasr_2025" class="col-sm-9">
-        
-        <!-- Title -->
-        <div class="title">DASR: Distributed Adaptive Scene Recognition-A Multi-Agent Cloud-Edge Framework for Language-Guided Scene Detection</div>
-        <!-- Author -->
-        <div class="author">
-            <em><b>Can Cui</b></em>, Yongkang Liu, Seyhan Ucar, Juntong Peng, Ahmadreza Moradipari, Maryam Khabazi, and <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>
-            
-        </div>
-        <div class="periodical">
-            
-            <em>In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track</em>
-            
-            
-            (<b>EMNLP</b>)
-            
-            
-            , 2025
-            
-            </div>
-        
-
-        <!-- Links/Buttons -->
-        <div class="links">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://aclanthology.org/2025.emnlp-industry.57/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="external nofollow noopener">Website</a>
-            
-        </div>
-
-        <!-- Hidden abstract block -->
-        
-
-        <!-- Hidden bibtex block -->
-        
-    </div>
-</div>
+    <div class="paper-card-title">DASR: Distributed Adaptive Scene Recognition-A Multi-Agent Cloud-Edge Framework for Language-Guided Scene Detection</div>
+<div class="paper-card-meta">2025</div>
+</a>
 </li>
 <li>
-<!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
-    <div class="col-sm-3 abbr">
+<a class="paper-card" href="https://ieeexplore.ieee.org/abstract/document/10919978" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <img src="../assets/teaser/cover_talk2drive.png" class="teaser img-fluid z-depth-1">
+        <img src="/assets/teaser/cover_talk2drive.png" alt="Personalized Autonomous Driving with Large Language Models: Field Experiments" decoding="async">
         
-        
-        
-        <abbr class="badge">ITSC</abbr>
-        
-        
+        <span class="paper-card-venue">ITSC</span>
     </div>
-
-    <div id="cui_talk2drive_2024" class="col-sm-9">
-        
-        <!-- Title -->
-        <div class="title">Personalized Autonomous Driving with Large Language Models: Field Experiments</div>
-        <!-- Author -->
-        <div class="author">
-            <em><b>Can Cui</b></em>, Zichong Yang, Yupeng Zhou, <a href="https://maysonma.github.io/" rel="external nofollow noopener" target="_blank">Yunsheng Ma</a>, <a href="https://www.linkedin.com/in/juanwu-lu/" rel="external nofollow noopener" target="_blank">Juanwu Lu</a>, Lingxi Li, Yaobin Chen, Jitesh Panchal, and <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>
-            
-        </div>
-        <div class="periodical">
-            
-            <em>In 2024 IEEE 27th International Conference on Intelligent Transportation Systems (ITSC)</em>
-            
-            
-            (<b>ITSC</b>)
-            
-            
-            , 2024
-            
-            </div>
-        
-
-        <!-- Links/Buttons -->
-        <div class="links">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://ieeexplore.ieee.org/abstract/document/10919978" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="external nofollow noopener">Website</a>
-            
-        </div>
-
-        <!-- Hidden abstract block -->
-        
-
-        <!-- Hidden bibtex block -->
-        
-    </div>
-</div>
+    <div class="paper-card-title">Personalized Autonomous Driving with Large Language Models: Field Experiments</div>
+<div class="paper-card-meta">2024</div>
+</a>
 </li>
 <li>
-<!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
-    <div class="col-sm-3 abbr">
+<a class="paper-card" href="https://openaccess.thecvf.com/content/CVPR2024/html/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.html" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <img src="../assets/teaser/cover_lampilot.png" class="teaser img-fluid z-depth-1">
+        <img src="/assets/teaser/cover_lampilot.png" alt="LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs" decoding="async">
         
-        
-        
-        <abbr class="badge">CVPR</abbr>
-        
-        
+        <span class="paper-card-venue">CVPR</span>
     </div>
-
-    <div id="ma_lampilot_2024" class="col-sm-9">
-        
-        <!-- Title -->
-        <div class="title">LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs</div>
-        <!-- Author -->
-        <div class="author">
-<a href="https://maysonma.github.io/" rel="external nofollow noopener" target="_blank">Yunsheng Ma*</a>, 
-            <em><b>Can Cui*</b></em>, Xu Cao*, <a href="https://wenqian-ye.github.io/" rel="external nofollow noopener" target="_blank">Wenqian Ye</a>, Peiran Liu, <a href="https://www.linkedin.com/in/juanwu-lu/" rel="external nofollow noopener" target="_blank">Juanwu Lu</a>, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Aniket Bera, James M. Rehg, and <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>
-            
-        </div>
-        <div class="periodical">
-            
-            <em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>
-            
-            
-            (<b>CVPR</b>)
-            
-            
-            , 2024
-            
-            </div>
-        
-
-        <!-- Links/Buttons -->
-        <div class="links">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="external nofollow noopener">Website</a>
-            
-        </div>
-
-        <!-- Hidden abstract block -->
-        
-
-        <!-- Hidden bibtex block -->
-        
-    </div>
-</div>
+    <div class="paper-card-title">LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs</div>
+<div class="paper-card-meta">2024</div>
+</a>
 </li>
 <li>
-<!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
-    <div class="col-sm-3 abbr">
+<a class="paper-card" href="https://arxiv.org/abs/2310.08034" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <img src="../assets/teaser/cover_red.png" class="teaser img-fluid z-depth-1">
+        <img src="/assets/teaser/cover_receive.png" alt="Receive, Reason, and React: Drive as You Say with Large Language Models in Autonomous Vehicles" decoding="async">
         
-        
-        
-        <abbr class="badge">T-IV</abbr>
-        
-        
+        <span class="paper-card-venue">ITSM</span>
     </div>
-
-    <div id="cui_red_2023" class="col-sm-9">
+    <div class="paper-card-title">Receive, Reason, and React: Drive as You Say with Large Language Models in Autonomous Vehicles</div>
+<div class="paper-card-meta">2024</div>
+</a>
+</li>
+<li>
+<a class="paper-card" href="https://arxiv.org/abs/2309.10228" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
         
-        <!-- Title -->
-        <div class="title">REDFormer: Radar Enlightens the Darkness of Camera Perception with Transformers</div>
-        <!-- Author -->
-        <div class="author">
-            <em><b>Can Cui</b></em>, <a href="https://maysonma.github.io/" rel="external nofollow noopener" target="_blank">Yunsheng Ma</a>, <a href="https://www.linkedin.com/in/juanwu-lu/" rel="external nofollow noopener" target="_blank">Juanwu Lu</a>, and <a href="https://ziranw.github.io/" rel="external nofollow noopener" target="_blank">Ziran Wang</a>
-            
-        </div>
-        <div class="periodical">
-            
-            <em>In Proceedings of the IEEE Transactions on Intelligent Vehicles</em>
-            
-            
-            (<b>T-IV</b>)
-            
-            
-            , 2023
-            
-            </div>
+        <img src="/assets/teaser/cover_drive.png" alt="Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles" decoding="async">
         
-
-        <!-- Links/Buttons -->
-        <div class="links">
-            
-            
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://ieeexplore.ieee.org/document/10310160" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="external nofollow noopener">Website</a>
-            
-        </div>
-
-        <!-- Hidden abstract block -->
-        
-        <div class="abstract hidden">
-            <p>Enhancing the accuracy and reliability of perception systems in automated vehicles is critical, especially under varying driving conditions. Unfortunately, the challenges of adverse weather and low-visibility conditions can seriously degrade camera performance, introducing significant risks to vehicle safety. To address these concerns, in this study, we introduce a novel transformer-based 3D object detection model named ‘REDFormer’. By exploiting bird’s-eye-view camera-radar fusion, the REDFormer offers a more practical and financially viable solution for tackling low-visibility conditions. We validate our model using the comprehensive nuScenes dataset, incorporating camera images, multi-radar point clouds, weather information, and time-of-day data. In comparative analyses, our model surpasses state-of-the-art benchmarks in both classification and detection accuracy. An in-depth ablation study further elucidates the individual contributions of each model component in overcoming the challenges posed by weather and lighting conditions. Experimental results specifically highlight the model’s significant performance improvements, demonstrating a 31.31% increase in accuracy under rainy conditions and a 46.99% enhancement during nighttime scenarios, affirming REDFormer’s potential as a robust and cost-effective solution for automated vehicles.</p>
-        </div>
-        
-
-        <!-- Hidden bibtex block -->
-        
+        <span class="paper-card-venue">WACV</span>
     </div>
-</div>
+    <div class="paper-card-title">Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles</div>
+<div class="paper-card-meta">2024</div>
+</a>
+</li>
+<li>
+<a class="paper-card" href="https://ieeexplore.ieee.org/document/10310160" target="_blank" rel="noopener">
+    <div class="paper-card-thumb">
+        
+        <img src="/assets/teaser/cover_red.png" alt="REDFormer: Radar Enlightens the Darkness of Camera Perception with Transformers" decoding="async">
+        
+        <span class="paper-card-venue">T-IV</span>
+    </div>
+    <div class="paper-card-title">REDFormer: Radar Enlightens the Darkness of Camera Perception with Transformers</div>
+<div class="paper-card-meta">2023</div>
+</a>
 </li>
 </ol>
-          </div>
+    </div>
+  </div>
 
+  <button class="carousel-nav carousel-nav--next" type="button" aria-label="Scroll to more papers" hidden>
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <script>
+  (function () {
+    // Must stay inside .paper-carousel-wrap — currentScript.closest() walks up
+    // from this element to find the carousel it belongs to.
+    var wrap = document.currentScript.closest(".paper-carousel-wrap");
+    if (!wrap) return;
+    var rail = wrap.querySelector(".paper-carousel");
+    var prev = wrap.querySelector(".carousel-nav--prev");
+    var next = wrap.querySelector(".carousel-nav--next");
+
+    function step() {
+      var card = rail.querySelector(".paper-card");
+      // Advance by whole cards so a row never ends mid-figure.
+      return card ? Math.max(1, Math.round(rail.clientWidth / (card.offsetWidth + 14))) * (card.offsetWidth + 14)
+                  : rail.clientWidth * 0.8;
+    }
+
+    function sync() {
+      var max = rail.scrollWidth - rail.clientWidth;
+      // 4px of slack: sub-pixel layout means scrollLeft rarely hits max exactly.
+      var scrollable = max > 4;
+      wrap.classList.toggle("is-scrollable", scrollable);
+      prev.hidden = !scrollable || rail.scrollLeft <= 4;
+      next.hidden = !scrollable || rail.scrollLeft >= max - 4;
+      wrap.classList.toggle("at-start", rail.scrollLeft <= 4);
+      wrap.classList.toggle("at-end", rail.scrollLeft >= max - 4);
+    }
+
+    function go(delta) {
+      var max = rail.scrollWidth - rail.clientWidth;
+      var from = rail.scrollLeft;
+      var to = Math.max(0, Math.min(max, from + delta));
+      if (to === from) return;
+      try {
+        rail.scrollTo({ left: to, behavior: "smooth" });
+      } catch (e) {
+        rail.scrollLeft = to;
+      }
+      // Smooth scrolling is a no-op under reduced-motion settings and in some
+      // engines; jump if nothing actually moved. Re-sync explicitly too — the
+      // scroll event doesn't fire reliably for programmatic scrolling.
+      setTimeout(function () {
+        if (rail.scrollLeft === from) rail.scrollLeft = to;
+        sync();
+      }, 250);
+      setTimeout(sync, 700);
+    }
+
+    prev.addEventListener("click", function () { go(-step()); });
+    next.addEventListener("click", function () { go(step()); });
+    rail.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    // Cards carry lazy images, so re-check once they have settled.
+    window.addEventListener("load", sync);
+    sync();
+  })();
+  </script>
+</div>
+
+        </section>
 
         
     </article>
 
 </div>
+
       
     </div>
 
@@ -561,7 +460,7 @@ Google Scholar, or just disable all of them.
     </div>
     <div class="container">
         © Copyright 2026 Can  Cui.
-        Last updated: February 17, 2026.
+        Last updated: July 21, 2026.
     </div>
 
 </footer>
@@ -586,6 +485,19 @@ Google Scholar, or just disable all of them.
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Drop a shadow under the navbar once the page is scrolled -->
+  <script>
+    (function () {
+      var nav = document.getElementById("navbar");
+      if (!nav) return;
+      var update = function () {
+        nav.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+  </script>
 
   <!-- Load Common JS -->
   <script src="/assets/js/no_defer.js"></script>
