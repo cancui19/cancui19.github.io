@@ -1,4 +1,73 @@
+<div class="paper-carousel-wrap">
+  <button class="carousel-nav carousel-nav--prev" type="button" aria-label="Scroll to previous papers" hidden>
+    <i class="fas fa-chevron-left"></i>
+  </button>
 
-          <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
-          </div>
+  <div class="paper-carousel">
+    <div class="paper-track">
+      {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* --template bib_card %}
+    </div>
+  </div>
+
+  <button class="carousel-nav carousel-nav--next" type="button" aria-label="Scroll to more papers" hidden>
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <script>
+  (function () {
+    // Must stay inside .paper-carousel-wrap — currentScript.closest() walks up
+    // from this element to find the carousel it belongs to.
+    var wrap = document.currentScript.closest(".paper-carousel-wrap");
+    if (!wrap) return;
+    var rail = wrap.querySelector(".paper-carousel");
+    var prev = wrap.querySelector(".carousel-nav--prev");
+    var next = wrap.querySelector(".carousel-nav--next");
+
+    function step() {
+      var card = rail.querySelector(".paper-card");
+      // Advance by whole cards so a row never ends mid-figure.
+      return card ? Math.max(1, Math.round(rail.clientWidth / (card.offsetWidth + 14))) * (card.offsetWidth + 14)
+                  : rail.clientWidth * 0.8;
+    }
+
+    function sync() {
+      var max = rail.scrollWidth - rail.clientWidth;
+      // 4px of slack: sub-pixel layout means scrollLeft rarely hits max exactly.
+      var scrollable = max > 4;
+      wrap.classList.toggle("is-scrollable", scrollable);
+      prev.hidden = !scrollable || rail.scrollLeft <= 4;
+      next.hidden = !scrollable || rail.scrollLeft >= max - 4;
+      wrap.classList.toggle("at-start", rail.scrollLeft <= 4);
+      wrap.classList.toggle("at-end", rail.scrollLeft >= max - 4);
+    }
+
+    function go(delta) {
+      var max = rail.scrollWidth - rail.clientWidth;
+      var from = rail.scrollLeft;
+      var to = Math.max(0, Math.min(max, from + delta));
+      if (to === from) return;
+      try {
+        rail.scrollTo({ left: to, behavior: "smooth" });
+      } catch (e) {
+        rail.scrollLeft = to;
+      }
+      // Smooth scrolling is a no-op under reduced-motion settings and in some
+      // engines; jump if nothing actually moved. Re-sync explicitly too — the
+      // scroll event doesn't fire reliably for programmatic scrolling.
+      setTimeout(function () {
+        if (rail.scrollLeft === from) rail.scrollLeft = to;
+        sync();
+      }, 250);
+      setTimeout(sync, 700);
+    }
+
+    prev.addEventListener("click", function () { go(-step()); });
+    next.addEventListener("click", function () { go(step()); });
+    rail.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    // Cards carry lazy images, so re-check once they have settled.
+    window.addEventListener("load", sync);
+    sync();
+  })();
+  </script>
+</div>

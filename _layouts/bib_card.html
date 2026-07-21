@@ -1,0 +1,28 @@
+---
+---
+
+{%- comment -%}
+Compact card used by the horizontal carousel of selected papers on the home
+page. The full list on /publications/ uses _layouts/bib.html instead.
+{%- endcomment -%}
+
+{%- assign link = entry.website | default: entry.html -%}
+{%- if link == nil and entry.arxiv -%}
+{%- assign link = entry.arxiv | prepend: 'https://arxiv.org/abs/' -%}
+{%- endif -%}
+
+<a class="paper-card" {% if link %}href="{{ link }}" target="_blank" rel="noopener"{% endif %}>
+    <div class="paper-card-thumb">
+        {% if entry.teaser %}
+        <img src="{{ entry.teaser | prepend: '/assets/teaser/' | relative_url }}" alt="{{ entry.title | escape }}"
+            decoding="async">
+        {% endif %}
+        {% if entry.abbr %}<span class="paper-card-venue">{{ entry.abbr }}</span>{% endif %}
+    </div>
+    <div class="paper-card-title">{{ entry.title }}</div>
+    {%- comment -%}
+    Full venue names overflow a 210px card, and the abbreviation is already on
+    the thumbnail badge — so the meta line carries the year alone.
+    {%- endcomment -%}
+    {% if entry.year %}<div class="paper-card-meta">{{ entry.year }}</div>{% endif %}
+</a>

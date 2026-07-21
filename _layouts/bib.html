@@ -2,11 +2,20 @@
 ---
 
 <!--stole from: https://github.com/boleizhou/boleizhou.github.io/blob/master/_layouts/bib.html-->
-<div class="row">
+{%- comment -%}
+Entries without a teaser collapse the thumbnail column instead of leaving a
+blank quarter-width gap; the venue badge moves above the title.
+{%- endcomment -%}
+<div class="row{% unless entry.teaser %} bib-row--no-teaser{% endunless %}">
     <div class="col-sm-3 abbr">
         {% if entry.teaser %}
+        {%- comment -%}
+        No loading="lazy": some engines never fire the load even when the image
+        is in view, leaving blank teasers. The files are small enough now
+        (whole set ~4MB) that eager loading is fine.
+        {%- endcomment -%}
         <img src="{{ entry.teaser | prepend: '/assets/teaser/' | relative_url }}" class="teaser img-fluid z-depth-1"
-            alt="{{ entry.title | escape }}" loading="lazy">
+            alt="{{ entry.title | escape }}" decoding="async">
         {% endif %}
         {% if entry.abbr %}
         {% if site.data.venues[entry.abbr] %}
